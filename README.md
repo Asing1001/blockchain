@@ -6,7 +6,7 @@ Demonstrate the easiest implement of blockchain concept
 const crypto = require('crypto')
 
 const blockChains = []
-function calcHash(data, preHash) {
+function calcHash(data) {
     return crypto.createHmac('sha256', 'my secret')
         .update(data)
         .digest('hex');
